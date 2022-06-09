@@ -1,2 +1,0 @@
-# RockPaperGame
-Rock, paper, scissors 
