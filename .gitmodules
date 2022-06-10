@@ -1,4 +1,4 @@
-[submodule "Climate-Change-and-Flooding"]
+[submodule "/Climate-Change-and-Flooding"]
 	path = /Climate-Change-and-Flooding 
 	url = git@github.com:selamvv/selamvv.github.io.git
 
