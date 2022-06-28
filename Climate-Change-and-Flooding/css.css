@@ -1,0 +1,48 @@
+body{
+  text-align: center;  
+  padding: 10px 10px 10px 10px brown;
+  
+  background-image: url("https://www.abc.net.au/news/image/2455074-3x2-940x627.jpg");
+  background-image:  opacity: 15;
+  background-attachment: fixed;
+  align-content: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+  background-blend-mode: lighten;  
+ 
+}
+#svg{
+   display: inline-block;
+}
+  
+
+}
+svg{
+    
+    padding: 10px 10px 10px 10px;
+    border: 9px solid;
+    border-style:double;
+    background: rgba(76, 175, 80, 0.1)
+    
+    
+    }
+#yAxisRight1{
+    color: green
+}
+#yAxisLeft{
+    color: red
+}
+
+#yAxisRight{
+    color: blue
+}
+h1{
+    width:1000px;
+  padding: 1px 1px 1px 1px;
+  border: 10px double black;
+background: lightgrey;
+    font-size: 50;
+    font-style: oblique;
+
+}

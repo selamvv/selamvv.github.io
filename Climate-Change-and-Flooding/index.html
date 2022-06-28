@@ -1,0 +1,70 @@
+<DOCTYPE html>
+    <html>
+
+        <head>
+              <link rel="stylesheet" href="css.css">
+            
+              <h1>Flood Increase Due to Climate Change</h1>
+       
+        </head>
+
+        <style>
+
+body {
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, Helvetica, "Helvetica Neue", Helvetica, sans-serif;
+  margin: 30px auto;
+  width: 960px;
+  position: relative;
+}
+
+header {
+  padding: 6px 0;
+}
+
+.group {
+  margin-bottom: 1em;
+}
+
+.axis {
+  font: 15px sans-serif;
+  position: fixed;
+  pointer-events: none;
+  z-index: 2;
+  width: 9px;
+}
+
+.axis text {
+  -webkit-transition: fill-opacity 300ms linear;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, Helvetica, "Helvetica Neue", Helvetica, sans-serif;
+font-size: 25px;}
+
+.axis path {
+  display: none;
+            }
+
+.axis line {
+  stroke: #000;
+  shape-rendering: crispEdges;
+    width: 12px;
+}
+      
+#hoverbox{
+  font-size: 30px;
+   background-color:powderblue; 
+
+ }
+
+</style>
+        
+        <body>
+            <div id= "svg"><svg>
+                <div id= "hoverbox"> </div> </svg></div>
+            
+        <div class= axis> </div>
+        
+        
+        </body>
+       
+        <script src="https://d3js.org/d3.v5.js"></script>
+        <script src="java.js"></script>
+    </html>

@@ -7,15 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
         <style>
-            embed{ width: 600px; height: 500px;}
-            #header.container src {height:90px;}
-            .dropbtn {background-color: black;color: white;padding: 16px;font-size: 16px;border: none;}
-            .dropdown {position: relative;display: inline-block;}
-            .dropdown-content {display: none;position: absolute;background-color: lightgrey; min-width: 200px; z-index: 1;}
-            .dropdown-content a {color: black;padding: 12px 16px;text-decoration: none;display: block;}
-            .dropdown-content a:hover {background-color: white;}
-            .dropdown:hover .dropdown-content {display: block;}
-            .dropdown:hover .dropbtn {background-color: grey;}
+            .txtover { position:relative} 
+            .txtover figcaption { position:absolute; top:10; text-align: center; font-size:15; color:black;}
         </style>
 	</head>
 	<body class="homepage is-preload">
@@ -25,6 +18,7 @@
         <section id="header">
         <div class="container">
             <h1>Zombies</h1>
+            <h1>TO COME...</h1>
     <!-- Menu-->
         <nav id="nav">
             <h2><span>Menu</span></h2>
@@ -32,13 +26,12 @@
                   <li><a class="icon solid fa-sitemap" href="homePage.html">Home</a></li>
                   <li><a class="icon solid fa-sitemap" href="projectsPage.html">Projects</a>
                     <ul>
-                    <li><a href="concordPage.html">Concord</a></li>
-                    <li><a href="weatherPage.html">ClimateChange</a></li>
-                    <li><a href="pokemonPage.html">Pokemon Procurement</a></li>
+                        <li><a href="concordPage.html">Concord</a></li>
+                        <li><a href="weatherPage.html">ClimateChange</a></li>
                     </ul>
                   </li>
                   <li><a class="icon solid fa-sitemap" href="resumePage.html"><span>Resume</span></a></li>
-                  <li><a class="icon solid fa-sitemap" href="about.html"><span>About</span></a></li>
+                  <li><a class="icon solid fa-sitemap" href="resumePage.html"><span>About</span></a></li>
                   <li><a class="icon solid fa-sitemap" href="ContactPage.html"><span>Contact</span></a></li> 
                 </ul>
         </nav> 
@@ -49,12 +42,10 @@
             <header><h3>Zombie Bots</h3></header>
               <a href="https://github.com/selamvv/NetworkingApplication" class="image featured"><img src="images/zombie.img" alt="" />
               <h2>Zombies</h2><h3> General purpose botnets</h3><h4>Python</h4></a>
-              <p>A botnet is a group of internet devices that perform operations at the behest of their controller. This program retrieves, runs and reports python scripts at the request of the host.</p> 
-            <p>The zombies retrieves one or more tasks to run at the request of the command and control. The command and control can ask a specific Zombie to run, stop running, or return the report of a particular script.</p>
-            <p>The python scripts contain simple tasks such as counting and use the subprocess library to save the python scripts as files on the zombie site.</p>
+              <p>A botnet is a group of internet devices that perform operations at the behest of their controller. This program retrieves, runs and reports python scripts at the request of the host.</p>   
               <ul style="list-style-type:none;">
                   <li><a class=container href="https://github.com/selamvv/NetworkingApplication"><span> Github </span></a></li>
-                  <li><a class=container href="docs/Protocol%20Design%20Doc.pdf"> <span> Documentation </span></a></li>
+                  <li><a class=container href=""> <span> Documentation </span></a></li>
               </ul>
         </section>
         </div>
