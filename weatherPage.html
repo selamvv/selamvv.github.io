@@ -15,6 +15,16 @@
             .dropdown-content a:hover {background-color: white;}
             .dropdown:hover .dropdown-content {display: block;}
             .dropdown:hover .dropbtn {background-color: grey;}
+             .button {
+            border: none;
+            color: gainsboro;
+            padding: 10px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 14px 12px;
+            cursor: pointer;}
         </style>
 	</head>
 	<body class="homepage is-preload">
@@ -23,12 +33,11 @@
     <!-- Header -->
         <section id="header">
         <div class="container">
-        <h1 id="logo">ClimateChange and Flooding</h1>
+        <h1>ClimateChange and Flooding</h1>
         <p>Corrilation vs Causation</p>
     
     <!-- Menu-->
         <nav id="nav">
-            <h2><span>Menu</span></h2>
                 <ul>
                   <li><a class="icon solid fa-sitemap" href="homePage.html">Home</a></li>
                   <li><a class="icon solid fa-sitemap" href="projectsPage.html">Projects</a>
@@ -49,21 +58,24 @@
             <!-- Weather Features -->           
             <div class="row aln-right">
             <div class="container">
-                <section>
-                <header><h3>Data Visualization</h3></header>
-                    <iframe src="Climate-Change-and-Flooding/index.html" width="1000" height="800"></iframe> 
+            <section>
+            <header><h3>Data Visualization</h3></header>
+            
+            <iframe src="Climate-Change-and-Flooding/index.html" width="1000" height="800"></iframe> 
                  
-                <ul  style="list-style-type:none;">   
-                        <li><a href="https://github.com/selamvv/Climate-Change-and-Flooding"> <h2>Github</h2> </a></li>
-            <li><h2> Description </h2></li>
-            <h1>What is correlation used for?</h1>
-            <p>Correlation is used to find the relationship between two quantitative variables that are linear.</p>
-            <h1>What is the difference between correlation and causation?</h1>
-            <p>Correlation does not imply causation. A change in the variable's  linear line does not affect the other  variable's linear line that happens to line up.
-            <p>We compare and contrast with different visually displayed relationships, the parallel coordinate lines are used for plotting multivariate, numerical data and a scatter plot matrix to see the relationship between combination of variables, we can avoid the causation vs correlation.</p>			
-            <li><a href="docs/computer%20science%20project%20%5EN2.pdf"><h2>Documentation</h2></a></li> 
-                    </ul>
-                </section>
+            <ul  style="list-style-type:none;">   
+                <li><h2> Description </h2></li>
+                <h1>What is correlation used for?</h1>
+                <p>Correlation is used to find the relationship between two quantitative variables that are linear.</p>
+                <h1>What is the difference between correlation and causation?</h1>
+                <p>Correlation does not imply causation. A change in the variable's  linear line does not affect the other  variable's linear line that happens to line up.
+                <p>We compare and contrast with different visually displayed relationships, the parallel coordinate lines are used for plotting multivariate, numerical data and a scatter plot matrix to see the relationship between combination of variables, we can avoid the causation vs correlation.</p>		
+                
+                <li><button class="button button1"> <a href="https://github.com/selamvv/Climate-Change-and-Flooding"> Github </a></button></li>
+
+                <li><button class="button button1"><a href="docs/computer%20science%20project%20%5EN2.pdf">Documentation</a></button></li> 
+            </ul>
+            </section>
             </div>
             </div>
             </div>
@@ -76,6 +88,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-        
+    <footer style="background-color: #655;color: white;">
+  <p>Author: Selam Van Voorhis<br> 
+</footer>
 	</body>
 </html>

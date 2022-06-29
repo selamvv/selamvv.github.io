@@ -2,13 +2,13 @@
 
 <html>
 	<head>
-		<title>Selam Van Voorhis</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
       <style>
+           * {box-sizing: border-box;}
             embed{ width: 600px; height: 500px;}
-            #header.container src {height:90px;}
+            #header.container src {height:60px;}
             .dropbtn {background-color: black;color: white;padding: 16px;font-size: 16px;border: none;}
             .dropdown {position: relative;display: inline-block;}
             .dropdown-content {display: none;position: absolute;background-color: lightgrey; min-width: 200px; z-index: 1;}
@@ -16,39 +16,49 @@
             .dropdown-content a:hover {background-color: white;}
             .dropdown:hover .dropdown-content {display: block;}
             .dropdown:hover .dropbtn {background-color: grey;}
+             .button {
+            border: none;
+            color: gainsboro;
+            padding: 10px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 14px 12px;
+            cursor: pointer;}
         </style>
 	</head>
 	<body class="homepage is-preload">
-		<div id="page-wrapper">
+    <div id="page-wrapper" style="padding:20px;">
 
-			<!-- Header -->
-				<section id="header">
-					<div class="container">
-
-					<nav id="nav">
-                    <h2><span>Menu</span></h2>
-                        <ul>
-                          <li><a class="icon solid fa-sitemap" href="homePage.html">Home</a></li>
-                          <li><a class="icon solid fa-sitemap" href="projectsPage.html">Projects</a>
-                            <ul>
-                                <li><a class="icon solid fa-sitemap" href="zombies.html">Zombies</a></li>
-                                <li><a class="icon solid fa-sitemap" href="weatherPage.html">ClimateChange</a></li>
-                                <li><a href="pokemonPage.html">Pokemon Procurement</a></li>
-                              </ul>
-                          </li>
-                          <li><a class="icon solid fa-sitemap" href="resumePage.html"><span>Resume</span></a></li>
-                          <li><a class="icon solid fa-sitemap" href="about.html"><span>About</span></a></li>
-                          <li><a class="icon solid fa-sitemap" href="ContactPage.html"><span>Contact</span></a></li> 
-                        </ul>
-				    </nav>
-                    </div>
-                </section> 
+    <!-- Header -->
+        <section id="header" style="margin: 50px;" >
+            <h1>Concord</h1>
+            <div class="container" style="padding:60px;">
+                
+    <!-- Menu-->
+            <nav id="nav" style="padding:90px;">
+            <ul>
+                <li><a class="icon solid fa-sitemap" href="homePage.html">Home</a></li>
+                <li><a class="icon solid fa-sitemap"href="projectsPage.html">Projects</a>
+                <ul>
+                    <li><a href="zombies.html">Zombies</a></li>
+                    <li><a href="weatherPage.html">ClimateChange</a></li>
+                    <li><a href="pokemonPage.html">Pokemon Procurement</a></li>
+                </ul>
+                 </li>
+                 <li><a class="icon solid fa-sitemap" href="resumePage.html"><span>Resume</span></a></li>
+                 <li><a class="icon solid fa-sitemap" href="about.html"><span>About</span></a></li>
+                 <li><a class="icon solid fa-sitemap" href="ContactPage.html"><span>Contact</span></a></li> 
+            </ul>
+            </nav>
+            </div>
+        </section> 
 <!-- Features -->
         <section>
             <container>
             <section id="features">
             <div class="col-4 col-6-medium col-12-small">
-             
                 
             <!-- Networking Features -->           
             <div class="row aln-right">
@@ -80,13 +90,16 @@
                             they so choose</p>
                     </div>
                     <ul style="list-style-type:none;">
-                    <li><a class=container href="https://github.com/selamvv/SecureConcord.git">
+                     
+                    <li><button class="button button1"> <a class=container href="https://github.com/selamvv/SecureConcord.git">
                         <span> Github </span>
-                        </a>  
+                        </a>
+                        </button>
                     </li>
-                    <li>
+                    
+                    <li><button class="button button1"> 
                     <a class=container href="Concord%20Design%20Document%20(1).pdf">
-                        <span> Documentation </span></a></li>
+                        <span> Documentation </span></a></button></li>
                     </ul>
                 </section>
                     </div>
@@ -103,6 +116,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-        
+    <footer style="background-color: #655;color: white;">
+  <p>Author: Selam Van Voorhis<br> 
+</footer>   
 	</body>
 </html>
