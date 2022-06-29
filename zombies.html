@@ -15,18 +15,22 @@
             .dropdown-content a:hover {background-color: white;}
             .dropdown:hover .dropdown-content {display: block;}
             .dropdown:hover .dropbtn {background-color: grey;}
+                   @media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
         </style>
 	</head>
 	<body class="homepage is-preload">
-    <div id="page-wrapper">
+    <div id="page-wrapper" style="padding:20px;">
 
     <!-- Header -->
-    <section id="header">
-        <h1>Zombies</h1>   </section> 
-        <div class="container">
-         
+   <section id="header" style="padding: 40px;">
+        <h1>Zombies</h1>
     <!-- Menu-->
-        <nav id="nav">
+          <nav id="nav" style="margin: 50px;">
                 <ul>
                   <li><a class="icon solid fa-sitemap" href="homePage.html">Home</a></li>
                   <li><a class="icon solid fa-sitemap" href="projectsPage.html">Projects</a>
@@ -41,13 +45,14 @@
                   <li><a class="icon solid fa-sitemap" href="ContactPage.html"><span>Contact</span></a></li> 
                 </ul>
         </nav> 
-        </div>
-      
+             </section>
 <!-- Features --> 
-        <section id="features">
-            <header><h3>Zombie Bots</h3></header>
+           <section style="margin: 60px;">
+            
+            <h3>Zombie Bots</h3>
               <a href="https://github.com/selamvv/NetworkingApplication" class="image featured"><img src="images/zombie.img" style="max-width:60%; " />
               <h2>Zombies</h2><h3> General purpose botnets</h3><h4>Python</h4></a>
+               
             <div class="container" style="padding: 30px;">
                 <div>
               <p>A botnet is a group of internet devices that perform operations at the behest of their controller. This program retrieves, runs and reports python scripts at the request of the host.</p> 
