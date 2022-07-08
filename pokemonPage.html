@@ -2,20 +2,56 @@
 <html>
     <!-- Head -->
 	<head>
-		<title>Pokemon Page</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-        <style>
-            embed{ width: 600px; height: 500px;}
-            #header.container src {height:90px;}
-            .dropbtn {background-color: black;color: white;padding: 16px;font-size: 16px;border: none;}
-            .dropdown {position: relative;display: inline-block;}
-            .dropdown-content {display: none;position: absolute;background-color: lightgrey; min-width: 200px; z-index: 1;}
-            .dropdown-content a {color: black;padding: 12px 16px;text-decoration: none;display: block;}
-            .dropdown-content a:hover {background-color: white;}
-            .dropdown:hover .dropdown-content {display: block;}
-            .dropdown:hover .dropbtn {background-color: grey;}
+<title>Pokemon Page</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<style>
+    embed{ width: 600px; height: 500px;}
+    #header.container src {height:90px;}
+    .dropbtn {background-color: black;color: white;padding: 16px;font-size: 16px;border: none;}
+    .dropdown {position: relative;display: inline-block;}
+    .dropdown-content {display: none;position: absolute;background-color: lightgrey; min-width: 200px; z-index: 1;}
+    .dropdown-content a {color: black;padding: 12px 16px;text-decoration: none;display: block;}
+    .dropdown-content a:hover {background-color: white;}
+    .dropdown:hover .dropdown-content {display: block;}
+    .dropdown:hover .dropbtn {background-color: grey;}
+    /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: darkgrey;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
         </style>
     </head>
 
@@ -23,7 +59,7 @@
  <div id="page-wrapper">
     <!-- Header -->
     <section id="header" style="padding: 30px; margin: 30px;">
-    <h1>Pokemon Pecurment</h1>
+    <h1>Pokemon Procurement Center Database</h1>
         
 <!-- Nav -->
     <nav id="nav" style="margin: 10px; padding: 20px;">
@@ -43,8 +79,17 @@
     </section>
      
 <!-- Features -->
-    <h2 style="text-align: center; margin-top: 20px; padding-top: 20px;">Database Application</h2>
+     <h2 style="text-align: center; margin-top: 20px; padding-top: 20px;">Database Application</h2>
+     
+     
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Implementation')">Implementation</button>
+  <button class="tablinks" onclick="openCity(event, 'Description')">Description</button>
+  <button class="tablinks" onclick="openCity(event, 'Diagram')">Diagram</button>
+</div>
 
+<div id="Implementation" class="tabcontent">
+  <h3>Implementation</h3>
     <div class="container" style="padding: 10px; border:firebrick; border-style: outset;align-items: center;">
       <a href="https://github.com/selamvv/NetworkingApplication" class="image featured" ><img src="images/pokemon.jpg" alt="" style="height: 50%;width: 60%;align-content: center;">
         <h4>Python</h4></a>
@@ -57,8 +102,48 @@
       </ul>
     </div>
         </div>
-        </div>
+</div>
+
+<div id="Description" class="tabcontent">
+  <h3>Description</h3>
+     <div class="container" style="padding: 10px; border:firebrick; border-style: outset;">
+    <div class="container" style="padding: 20px; border:firebrick; border-style: outset; margin-top:30px;background-color: #ccc;">
+        <p> <strong style="color:black;">Store customer orders and Pokémon sightings to fulfill orders for as many different Pokémon as
+possible.
+<ul>
+    <li> Record the last location of Pokémon.</li>
+    <li>Keep track of costumes checked out/returned.</li>
+    <li>Keep track of Pokémon orders as well as the Pokémon in our inventory (the ones that are staying at the procurement center already)</li></ul>
+            </strong></p>
+        <p><strong style="color:black;">A database specifically created in response to organizational needs. A database application using a Relational Database Management System (RDBMS), the Structured Query Language (SQL), and other programming languages and software systems.</strong></p>
+    <p><strong style="color:black;">A virtual 
+machine set up through Google Cloud Platform acts as the web server running the 
+LAMP (Linux, Apache, MySQL/MariaDB, PHP) 
+stack.
+        </strong> </p></div>
+    </div></div>
+
+<div id="Diagram" class="tabcontent">
+  <h3>Diagram</h3>
+    <img src="images/umlpokemon.png" style="height: 200%; width: 100%;">
+</div>
+    </div>
 		<!-- Scripts -->
+        <script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
