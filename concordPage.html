@@ -25,7 +25,42 @@
             font-size: 16px;
             margin: 14px 12px;
             cursor: pointer;}
-        </style>
+          .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: darkgrey;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
 	</head>
 	<body class="homepage is-preload">
     <div id="page-wrapper">
@@ -53,22 +88,24 @@
         
 <!-- Features -->
         <h2 style="text-align: center; margin: 20px; padding: 20px;">Chat Application</h2>
-        
-        <section id ="features" style="padding: 20px; margin: 10px; background-color:#e4ddda;">
-            
-        <div class="container" style="padding: 20px;  border:firebrick; border-style: outset; background-color: #e5e5e5;">
-<!--    add div to seperate and expand video seperatly-->
-        <video width="520" height="540" controls>
+<!-- Tabs -->
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Implementation')">Implementation</button>
+        <button class="tablinks" onclick="openCity(event, 'Description')">Description</button>
+        <button class="tablinks" onclick="openCity(event, 'Diagram')">Diagram</button>
+    </div>
+<!-- Implementation tab -->
+    <div id="Implementation" class ="tabcontent" style="align-content: center;">
+    <h4>A full functional test</h4>
+         <div class="container" style="background-color:#bbbbbb; padding:10px;display: block;">
+        <video width="720" height="540" style= "padding-left: 250px;"controls>
         <source src="ConcordAuto.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-        </video>    
-        <section style="top-margin: 10px;">
+             </video> 
+        </div>
         
-        <h3><strong style="font-size:20px;top-margin: 30px;">Description</strong></h3>
-            
-            <div class="container" style="background-color:#bbbbbb; padding:20px; align-content: center;">
-                <p><strong>A communication platform for everyone that provides a place
-                           where people can reach a consensus.</strong></p>
+        <div class="container" style="background-color:#bbbbbb; padding:20px;">
+                <p><strong>A communication platform for everyone that provides a place where people can reach a consensus.</strong></p>
                     <p><strong>proxy pattern through our Server class, we ensure
                            that clients can easily communicate with the “backend” of our system through RMI.
                            Furthermore, through the login() methods, the Server ensures that only clients that
@@ -85,16 +122,60 @@
                     <li><button class="button button1"> <a class=container href="Concord%20Design%20Document%20(1).pdf">
                         <span> Documentation </span></a></button></li>
                     </ul>
-                    
                  </div>
-                
-           
-                </section>          
         </div>
-            
-            </section>
-        </div>
+        
+<!-- Description tab -->  
+    <div id="Description" class="tabcontent">
+  <h3>Description</h3>
+     <div class="container" style="padding: 10px; border:firebrick; border-style: outset;">
+    <div class="container" style="padding: 20px; border:firebrick; border-style: outset; margin-top:30px;background-color: #ccc;">
+        
+        <p><strong>Proxy pattern through our Server class, we ensure
+            that clients can easily communicate with the “backend” of our system through RMI.</strong></p>
+        <p><strong>Through the login() methods, the Server ensures that only clients that
+provide a valid username and password can talk to the backend and receive a User
+            object to be associated with.</strong></p>
+        <p><strong>Any client only has the permissions that their associated user does</strong></p>
+        <p><strong>StoreToXML() method within the Server saves all the important data within the server, such as the known clients and the database
+            attribute it has, and/or reading this data back in on startup</strong></p>
+        <p><strong>For the purpose of notifications, the Observer pattern is implemented</strong></p>
+        
+        <p> <strong style="color:black;">Standard APIs, event models, graphical user interfaces, human-computer interaction, multi-threading, debugging methods, exception handling, design patterns and advanced topics in object oriented design.
+            </strong></p></div>
+         <h4>Demenstrating</h4>
+         <ul>
+         <li>Develop GUIs using JavaFX and TestFX</li>
+         <li>Debugging frameworks to automate testing</li>
+        <li>Concurrent versioning system</li>
+        <li>Agile techniques to solve problems</li>
+        <li>A collection of unit tests</li>
+         
+         </ul>
+    </div></div>
+        
+<!-- Diagram tab --> 
+    <div id="Diagram" class="tabcontent">
+      <h3>Diagram</h3>
+        <img src="images/ConcordUML.png">
+    </div>
+    </div>
 		<!-- Scripts -->
+            <script>
+function openCity(evt, cityName) {
+var i, tabcontent, tablinks;
+tabcontent = document.getElementsByClassName("tabcontent");
+for (i = 0; i < tabcontent.length; i++) {
+tabcontent[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tablinks");
+for (i = 0; i < tablinks.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+document.getElementById(cityName).style.display = "block";
+evt.currentTarget.className += " active";
+}
+</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>

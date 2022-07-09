@@ -55,10 +55,10 @@
         </style>
     </head>
 
-	<body class="homepage is-preload">
+<body class="homepage is-preload">
  <div id="page-wrapper">
-    <!-- Header -->
-    <section id="header" style="padding: 30px; margin: 30px;">
+<!-- Header -->
+<section id="header" style="padding: 30px; margin: 30px;">
     <h1>Pokemon Procurement Center Database</h1>
         
 <!-- Nav -->
@@ -79,20 +79,19 @@
     </section>
      
 <!-- Features -->
-     <h2 style="text-align: center; margin-top: 20px; padding-top: 20px;">Database Application</h2>
-     
+<h2 style="text-align: center; margin-top: 20px; padding-top: 20px;">Database Application</h2>
      
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Implementation')">Implementation</button>
   <button class="tablinks" onclick="openCity(event, 'Description')">Description</button>
   <button class="tablinks" onclick="openCity(event, 'Diagram')">Diagram</button>
 </div>
-
+<!-- Implementation Tab -->
 <div id="Implementation" class="tabcontent">
   <h3>Implementation</h3>
     <div class="container" style="padding: 10px; border:firebrick; border-style: outset;align-items: center;">
       <a href="https://github.com/selamvv/NetworkingApplication" class="image featured" ><img src="images/pokemon.jpg" alt="" style="height: 50%;width: 60%;align-content: center;">
-        <h4>Python</h4></a>
+       </a>
     <div>
         <p style="border: yellow;border-style: outset; text-align: center;padding: 20px;"><strong style="font-size: 30px;">A Pokemon Procurement Services(PPC) database implementation that allows workers ability to perform the main functions of their business with relative ease.</strong></p>  
       <ul style="list-style-type:none; text-align: center">
@@ -103,7 +102,8 @@
     </div>
         </div>
 </div>
-
+     
+<!-- Description Tab -->
 <div id="Description" class="tabcontent">
   <h3>Description</h3>
      <div class="container" style="padding: 10px; border:firebrick; border-style: outset;">
@@ -122,34 +122,35 @@ LAMP (Linux, Apache, MySQL/MariaDB, PHP)
 stack.
         </strong> </p></div>
     </div></div>
-
-<div id="Diagram" class="tabcontent">
-  <h3>Diagram</h3>
-    <img src="images/umlpokemon.png" style="height: 200%; width: 100%;">
-</div>
+<!-- Diagram Tab -->
+    <div id="Diagram" class="tabcontent">
+      <h3>Diagram</h3>
+        <img src="images/umlpokemon.png" style="height: 200%; width: 100%;">
     </div>
-		<!-- Scripts -->
-        <script>
+     
+    </div>
+<!-- Scripts -->
+    <script>
 function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
+var i, tabcontent, tablinks;
+tabcontent = document.getElementsByClassName("tabcontent");
+for (i = 0; i < tabcontent.length; i++) {
+tabcontent[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tablinks");
+for (i = 0; i < tablinks.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+document.getElementById(cityName).style.display = "block";
+evt.currentTarget.className += " active";
 }
 </script>
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
         
 	</body>
 </html>

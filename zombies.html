@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <!-- Head -->
-	<head>
+<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -16,6 +16,41 @@
             .dropdown-content a:hover {background-color: white;}
             .dropdown:hover .dropdown-content {display: block;}
             .dropdown:hover .dropbtn {background-color: grey;}
+         .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: darkgrey;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
          .button {
             border: none;
             color:floralwhite;
@@ -34,9 +69,9 @@
 }
 }
      </style>
-	</head>
-	<body class="homepage is-preload">
-    <div id="page-wrapper">
+</head>
+<body class="homepage is-preload">
+<div id="page-wrapper">
             
     <!-- Header -->
     <section id="header" style="padding:30px;margin: 30px;">
@@ -58,29 +93,77 @@
             </ul>
             </nav> 
         </section>
-    <h2 style="text-align: center; margin: 20px; padding: 20px;">Network Application</h2>
         
     <!-- Features --> 
-         <section id ="features" style="padding: 30px; margin: 20px; background-color:#e4ddda;">
-            
-        <div class="container" style="padding: 20px;  border:firebrick; border-style: outset; background-color: #e5e5e5;">
-              <a href="https://github.com/selamvv/NetworkingApplication" class="image featured"><img src="images/zombie.img" style="max-width:100%;" />
-              <h3> General purpose botnets</h3><h4>Python</h4></a>
-               </div>
-              
-            <div class="container" style="padding: 30px;background-color:#e5e5e5;">
-              <p>A botnet is a group of internet devices that perform operations at the behest of their controller. This program retrieves, runs and reports python scripts at the request of the host.</p> 
-            <p>The zombies retrieves one or more tasks to run at the request of the command and control. The command and control can ask a specific Zombie to run, stop running, or return the report of a particular script.</p>
-            <p>The python scripts contain simple tasks such as counting and use the subprocess library to save the python scripts as files on the zombie site.</p>
-              <ul style="list-style-type:none;">
-                  <li><button class="button button1"><a class=container href="https://github.com/selamvv/NetworkingApplication"><span> Github </span></a></button></li>
-                  <li><button class="button button1"><a class=container href="docs/Protocol%20Design%20Doc.pdf"> <span> Documentation </span></a></button></li>
-              </ul>
-                
+     <h2 style="text-align: center; margin: 20px; padding: 20px;">Network Application</h2>
+        
+    <!-- Tabs --> 
+    <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Implementation')">Implementation</button>
+  <button class="tablinks" onclick="openCity(event, 'Description')">Description</button>
+  <button class="tablinks" onclick="openCity(event, 'Diagram')">Diagram</button>
+    </div>
+        
+    <!-- Implementation Tab -->
+    <div id="Implementation" class="tabcontent">
+      <h3>Implementation</h3>
+        <div class="container" style="padding: 10px; border:firebrick; border-style: outset;align-items: center;">
+          <a href="https://github.com/selamvv/NetworkingApplication" class="image featured" ><img src="images/zombie.img" alt="" style="height: 50%;width: 60%;align-content: center;">
+            </a>
+       <div class="container" style="padding: 30px;background-color:#e5e5e5;">
+                  
+                  <ul style="list-style-type:none;">
+                      <li><button class="button button1"><a class=container href="https://github.com/selamvv/NetworkingApplication"><span> Github </span></a></button></li>
+                      <li><button class="button button1"><a class=container href="docs/Protocol%20Design%20Doc.pdf"> <span> Documentation </span></a></button></li>
+                  </ul>
+
+                </div>
             </div>
-        </section>
-        </div>
+    </div>
+
+    <!-- Description Tab -->
+    <div id="Description" class="tabcontent">
+      <h3>Description</h3>
+         <div class="container" style="padding: 10px; border:firebrick; border-style: outset;">
+        <div class="container" style="padding: 20px; border:firebrick; border-style: outset; margin-top:30px;background-color: #ccc;">
+           <p>A botnet is a group of internet devices that perform operations at the behest of their controller. This program retrieves, runs and reports python scripts at the request of the host.</p> 
+                <p>The zombies retrieves one or more tasks to run at the request of the command and control. The command and control can ask a specific Zombie to run, stop running, or return the report of a particular script.</p>
+                <p>The python scripts contain simple tasks such as counting and use the subprocess library to save the python scripts as files on the zombie site.</p>
+             <p>a botnet is composed of a command and control (C and C) system that allows the controller to order the internet devices (zombies) to perform actions and report the results of those actions</p>
+            <ul>
+                <li>Zombies retrieve python scripts and run them at the request of C and C, Stop running scripts at the request of C and C and Report the results (output) of the python scripts to the C and C (upon request)</li>
+                <li>Command and Control can ask a specific or all Zombies to run a python script, stop running a python specific script, ask a specific Zombie to return the result of a script, either the output of the script or a message that the program is still running.
+
+</li>
+            
+            </ul>
+             
+             </div>
+        </div></div>
+
+    <!-- Diagram Tab -->
+     <div id="Diagram" class="tabcontent">
+          <h3>Diagram</h3>
+            <img src="images/resNtw02.png" style="height: 200%; width: 100%;">
+        </div>     
+        
+</div>
 		<!-- Scripts -->
+         <script>
+function openCity(evt, cityName) {
+var i, tabcontent, tablinks;
+tabcontent = document.getElementsByClassName("tabcontent");
+for (i = 0; i < tabcontent.length; i++) {
+tabcontent[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tablinks");
+for (i = 0; i < tablinks.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+document.getElementById(cityName).style.display = "block";
+evt.currentTarget.className += " active";
+}
+</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
