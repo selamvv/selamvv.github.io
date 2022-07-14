@@ -81,8 +81,9 @@
 <!-- Features -->
 <h2 style="text-align: center; margin-top: 20px; padding-top: 20px;">Database Application</h2>
      
+<!-- Tabs -->
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Implementation')">Implementation</button>
+  <button class="tablinks" onclick="openCity(event, 'Implementation')"id="defaultOpen" >Implementation</button>
   <button class="tablinks" onclick="openCity(event, 'Description')">Description</button>
   <button class="tablinks" onclick="openCity(event, 'Diagram')">Diagram</button>
 </div>
@@ -131,6 +132,7 @@ stack.
     </div>
 <!-- Scripts -->
     <script>
+document.getElementById("defaultOpen").click();
 function openCity(evt, cityName) {
 var i, tabcontent, tablinks;
 tabcontent = document.getElementsByClassName("tabcontent");

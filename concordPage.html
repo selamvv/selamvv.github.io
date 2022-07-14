@@ -90,7 +90,7 @@
         <h2 style="text-align: center; margin: 20px; padding: 20px;">Chat Application</h2>
 <!-- Tabs -->
     <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'Implementation')">Implementation</button>
+        <button class="tablinks" onclick="openCity(event, 'Implementation')"id="defaultOpen" >Implementation</button>
         <button class="tablinks" onclick="openCity(event, 'Description')">Description</button>
         <button class="tablinks" onclick="openCity(event, 'Diagram')">Diagram</button>
     </div>
@@ -123,32 +123,21 @@
     <div class="container" style="padding: 20px; border:firebrick; border-style: outset; margin-top:30px;background-color: #ccc;">
         
          <h4>Product Description</h4>
-        <p><strong> A communication platform inspired by Discord which upon downloading allows users to create an account, create groups and channels with different privileges, send invites, messages block and kick out users. </strong></p>
+        <p><strong style="color:black;">A communication platform inspired by Discord which upon downloading allows users to create an account, create groups and channels with different privileges, send invites, messages block and kick out users. </strong></p>
         
         <h4>Implementation Description</h4>
-        <p><strong>A proxy pattern through the server class ensures
-            that clients can easily communicate with the “backend” of our system through RMI.</strong></p>
-        <p><strong>Through the login() methods, the Server ensures that only clients that
-provide a valid username and password can talk to the backend and receive a User
-            object to be associated with.</strong></p>
-        <p><strong>Any client only has the permissions that their associated user does</strong></p>
-        <p><strong>StoreToXML() method within the Server saves all the important data within the server, such as the known clients and the database
-            attribute it has, and/or reading this data back in on startup</strong></p>
-        <p><strong>For the purpose of notifications, the Observer pattern is implemented</strong></p>
-        
-  
-        
-        <h4>Demenstrating</h4>
-        <p> <strong style="color:black;">Standard APIs, event models, graphical user interfaces, human-computer interaction, multi-threading, debugging methods, exception handling, design patterns and advanced topics in object oriented design.
-            </strong></p></div>
-         <ul>
+        <p><strong style="color:black;">The observer pattern is used for the server class to allow thhe clients to communicate with the backend of the system through RMI. The Server saves all the important data, such as the known clients and the database attribute it has, and/or reading this data back in on startup</strong></p>
+        <h4>Demonstrating</h4>
+        <p> <strong style="color:black;">Standard APIs, event models, graphical user interfaces, human-computer interaction, multi-threading, debugging methods, exception handling, design patterns and object oriented design.
+            </strong></p>
+         <ul><strong style="color:black;">
          <li>Develop GUIs using JavaFX and TestFX</li>
          <li>Debugging frameworks to automate testing</li>
         <li>Concurrent versioning system</li>
         <li>Agile techniques to solve problems</li>
-        <li>A collection of unit tests</li>
+             <li>A collection of unit tests</li></strong>
          
-         </ul>
+        </ul></div>
     </div></div>
         
 <!-- Diagram tab --> 
@@ -159,6 +148,7 @@ provide a valid username and password can talk to the backend and receive a User
     </div>
 		<!-- Scripts -->
             <script>
+document.getElementById("defaultOpen").click();
 function openCity(evt, cityName) {
 var i, tabcontent, tablinks;
 tabcontent = document.getElementsByClassName("tabcontent");

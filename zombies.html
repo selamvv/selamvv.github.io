@@ -99,7 +99,7 @@
         
     <!-- Tabs --> 
     <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Implementation')">Implementation</button>
+  <button class="tablinks" onclick="openCity(event, 'Implementation')"id="defaultOpen">Implementation</button>
   <button class="tablinks" onclick="openCity(event, 'Description')">Description</button>
   <button class="tablinks" onclick="openCity(event, 'Diagram')">Diagram</button>
     </div>
@@ -111,7 +111,6 @@
           <a href="https://github.com/selamvv/NetworkingApplication" class="image featured" ><img src="images/zombie.img" alt="" style="height: 50%;width: 60%;align-content: center;">
             </a>
        <div class="container" style="padding: 30px;background-color:#e5e5e5;">
-                  
                   <ul style="list-style-type:none;">
                       <li><button class="button button1"><a class=container href="https://github.com/selamvv/NetworkingApplication"><span> Github </span></a></button></li>
                       <li><button class="button button1"><a class=container href="docs/Protocol%20Design%20Doc.pdf"> <span> Documentation </span></a></button></li>
@@ -150,6 +149,7 @@
 </div>
 		<!-- Scripts -->
          <script>
+document.getElementById("defaultOpen").click();
 function openCity(evt, cityName) {
 var i, tabcontent, tablinks;
 tabcontent = document.getElementsByClassName("tabcontent");
