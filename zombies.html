@@ -125,14 +125,19 @@
       <h3>Description</h3>
          <div class="container" style="padding: 10px; border:firebrick; border-style: outset;">
         <div class="container" style="padding: 20px; border:firebrick; border-style: outset; margin-top:30px;background-color: #ccc;">
+            <h3>General Purpose Bots</h3>
            <p style="color: black"><strong>A botnet is a group of internet devices that perform operations at the behest of their controller. This program is composed of a command and control (C and C) system that allows the controller to order internet devices (zombies) to perform actions</strong></p>
-            <ul style="color: black"><strong>
-                <li>Zombies retrieve, run, stop and report python scripts at the request of C and C </li>
-                <li>The Command and Control can ask a specific or all Zombies to run, stop or return the result/progress of script(s).
+            <h3>Zombie and Control and Command Network</h3>
+            <ul style="color: black;list-style-type: none;padding: 5px;"><strong>
+                <li>Commands are instructions a user types into the command-line interface (CLI) that they want executed. The Command and Control can ask a specific or all Zombies to run, stop or return the result/progress of script(s).
+                    <ul style="list-style-type: none;padding: 6px;">
+                        <li>Zombies retrieve, run, stop and report python scripts at the request of Command and Control</li>
+                        <li>The python scripts contain simple tasks such as counting, completing forms, or displaying images and uses the subprocess library to access the python scripts saved as files on the zombie site.</li>
+                    </ul>
                 </li>
-                <li>The python scripts contain simple tasks such as counting, completing forms, or displaying images and uses the subprocess library to access the python scripts saved as files on the zombie site.
                 </strong></ul>
-             <p style="color: black"><strong> The Control and Command send only one request per script at a time so the implementation only has one request per zombie per script. Like HTTP request messages, the request messages specify the action first and uses TCP as the transport layer protocol. Whereas HTTP has two types of request messages (GET and HEAD), we have three (RUN, STP and RES).</strong></p>
+            <h3>Network Protocol</h3>
+             <p style="color: black"><strong> The Control and Command sends only one request per script at a time so the implementation only has one request per zombie per script. Like HTTP request messages, the request messages specify the action first and uses TCP as the transport layer protocol. Whereas HTTP has two types of request messages (GET and HEAD), we have three (RUN, STP and RES).</strong></p>
              </div>
         </div></div>
 
