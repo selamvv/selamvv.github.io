@@ -16,67 +16,129 @@
             .dropdown-content a:hover {background-color: white;}
             .dropdown:hover .dropdown-content {display: block;}
             .dropdown:hover .dropbtn {background-color: grey;}
+            /* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
         </style>
     </head>
 
 	<body class="homepage is-preload">
-		 <div id="page-wrapper">
-			<!-- Header -->
-            <section id="header" style="padding: 30px; margin: 30px;">
-               
-                    <h1>Selam Van Voorhis</h1>
-				   
-            <!-- Nav -->
-            <nav id="nav" style="margin: 10px; padding: 20px;">
-                    <ul>
-                        <li><a class="icon solid fa-sitemap" href="homePage.html"><span>Home</span></a></li>
-                        <li><a class="icon solid fa-sitemap" href="projectsPage.html">Projects</a>
-                        <ul>
-                            <li><a href="concordPage.html">Concord</a></li>
-                            <li><a href="zombies.html">Zombies</a></li>
-                            <li><a href="weatherPage.html">ClimateChange</a></li>
-                            <li><a href="pokemonPage.html">Pokemon Procurement</a></li>
-                            </ul></li>
-                      <li><a class="icon solid fa-sitemap" href="resumePage.html"> <span>Resume</span></a></li>
-                      <li><a class="icon solid fa-sitemap" href="about.html"><span>About</span></a></li>
-                      <li><a class="icon solid fa-sitemap" href="ContactPage.html"> <span>Contact</span></a></li> 
-                    </ul>
-                </nav>
-                
-            </section>
-			<!-- Features -->
-             
-              <h2 style="text-align: center; margin-top: 10px; padding-top: 10px;">Jr. Software Developer. </h2>
+    <div id="page-wrapper">
         
-             <div class="container" style="padding: 10px; border:firebrick; border-style: outset;">
-				    <div class="row aln-center">
-				    <div class="col-4 col-6-medium col-12-small">
-				    <section style="border:silver; border-width:5px; border-style:outset;background-color: #e5e5e5">
-                    <a href="concordPage.html" class="image featured">
-                        <img src="images/concordImg.png" alt=""/>
-                        <h2>Concord</h2><h3>Chat Application</h3></a><p style="margin: 25px;"> Concord, a friendlier version of Discord, a communication platform developed for users from anywhere to connect to a central server and share groups, channels, messages and invites. </p>
-				    </section>       
-				    </div>
-				    <div class="col-4 col-6-medium col-12-small">
-                    <section style="border:silver; border-width:5px; border-style:outset;background-color: #e5e5e5;">
-                        <a href="zombies.html" class="image featured"> <img src="images/zombie.img"/> 
-                            <h2> Zombie Bots </h2><h3>Networking Application</h3></a> 
-                         <p style="margin: 25px;">      
-                            Zombie Bots allows the host controller at the server to control any number of clients connected through TCP sockets with custom protocol messages. The clients are the zombies and can carry out different tasks simultaniously.        
-                        </p>
-				   </section>
-                    </div>
-                    <div class="col-12">
-                    <section>
-				        <div class="actions"> 
-                            <a href="projectsPage.html" class="button icon solid fa-file">View More</a> 
-                        </div>
-                    </section>
-                    </div>
-                        
-                </div>
-                </div>
+    <!-- Header -->
+<section id="header" style="padding: 30px; margin: 30px;">
+<h1>Selam Van Voorhis</h1>
+
+<!-- Nav -->
+<nav id="nav" style="margin: 10px; padding: 20px;">
+            <ul>
+                <li><a class="icon solid fa-sitemap" href="homePage.html"><span>Home</span></a></li>
+                <li><a class="icon solid fa-sitemap" href="projectsPage.html">Projects</a>
+                <ul>
+                    <li><a href="concordPage.html">Concord</a></li>
+                    <li><a href="zombies.html">Zombies</a></li>
+                    <li><a href="weatherPage.html">ClimateChange</a></li>
+                    <li><a href="pokemonPage.html">Pokemon Procurement</a></li>
+                    </ul></li>
+              <li><a class="icon solid fa-sitemap" href="resumePage.html"> <span>Resume</span></a></li>
+              <li><a class="icon solid fa-sitemap" href="about.html"><span>About</span></a></li>
+              <li><a class="icon solid fa-sitemap" href="ContactPage.html"> <span>Contact</span></a></li> 
+            </ul>
+        </nav>
+</section>
+
+<!-- Features -->
+    <h2 style="text-align: center; margin-top: 20px; padding-top: 20px;">Jr. Software Developer. </h2>
+         <ul style="list-style-type: none;text-align: center; margin-top: 20px;">
+             <li>Bacholar of Science in Computer Science</li>
+             <li>Centre College Graduate '22</li></ul>
+<!--Intro --> 
+        <div class="container" style="border:firebrick; border-style: outset; height: 250px;padding: 10px;">
+<!--        <div style="border-width:5px; border:silver; margin:50px;padding:10px; border-style:outset;background-color: #e5e5e5;">-->
+        <h3>Welcome to my Web Portfolio</h3>    
+        <section style="border:silver; border-width:2px; border-style:outset; text-align:center; margin-left: 120px; margin-right:120px; margin-bottom: 10px;margin-top: 10px; padding: 20px;background-color: #dfe4e0;">    
+        <p><strong style="color:black;">With computer science internship experiences at various universities and rigorous courses at Centre College I've been able to build up skills in programming, problem solving and teamwork. My future endeavors include working with a tech team pursuing efforts in climate change, education or social equality.</strong></p>
+        </section> 
+<!--        </div>-->
+        </div>
+        
+<!-- Projects--> 
+     <div style="border-width:5px; border:silver; margin:50px;padding:10px; border-style:outset;background-color: #dfe4e0;">
+    <div class="container" style="border:firebrick; border-style: outset; height: 900px;margin-bottom: 30px;">
+    <h3 style="font-size: 30px; padding-top: 10px; margin-top: 10px; text-align: center;">Projects</h3>
+    <div class="row aln-center">
+        
+<!-- concordPage -->    
+        <div class="col-4 col-6-medium col-12-small">
+        <section style="border:silver; border-width:5px; border-style:outset;">
+            <a href="concordPage.html" class="image featured">
+            <img src="images/concordImg.png" alt=""/>
+            <h2>Concord</h2><h3>Chat Application</h3></a>
+            <p style="margin: 25px;"> Concord, a friendlier version of Discord, a communication platform developed for users from anywhere to connect to a central server and share groups, channels, messages and invites. </p>
+        </section>       
+        </div>
+
+<!-- ZombiePage -->
+            <div class="col-4 col-6-medium col-12-small">
+            <section style="border:silver; border-width:5px; border-style:outset;">
+                <a href="zombies.html" class="image featured"> <img src="images/zombie.img"> 
+                <h2> Zombie Bots </h2><h3>Networking Application</h3></a> 
+                <p style="margin: 25px;">       
+                Zombie Bots allows the host controller at the server to control any number of clients connected through TCP sockets with custom protocol messages. The clients are the zombies and can carry out different tasks simultaniously.        
+                </p>
+            </section>
             </div>
+                
+<!--view more-->
+            <div class="col-12">
+            <div class="actions"> 
+            <a href="projectsPage.html" class="button icon solid fa-file">View More</a> 
+            </div>  
+            </div>
+    </div> 
+    </div>
+        </div>
+        
+        </div>
 
 		<!-- Scripts -->
 
@@ -86,8 +148,8 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-  <footer style="background-color: #655;color: white;">
+    </body>
+      <footer style="background-color: #655;color: white;">
   <p>Author: Selam Van Voorhis<br> 
 </footer>
-    </body>
 </html>
